@@ -1,0 +1,110 @@
+<!--
+Nama : Rahma Apta Karisa
+NIM : 24.12.3266
+Kelas : SI 03
+Tanggal Pengerjaan : 18 Mei 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerjasama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="kerjasama.html">Kerjasama</a>
+        <a href="aboutme.html" style="float: right;">About Me</a>
+    </nav>
+     <main>
+      <section class="form">
+        <h2 class="title-form">Formulir Penawaran Kerjasama</h2>
+        <form action="submit-form.php" method="post">
+          <label for="nama" class="label1">Nama</label>
+          <p><input type="text" id="nama" placeholder="Masukkan Nama Anda..." /></p>
+
+          <label for="alamat" class="label1">Alamat</label>
+          <p>
+            <textarea
+              name="alamat"
+              id="alamat"
+              placeholder="Masukkan Alamat Anda..."
+            ></textarea>
+          </p>
+
+          <label for="nomor" class="label1">Nomor Telepon</label>
+          <p>
+            <input type="tel" id="nomor" placeholder="Masukkan Nomor Telepon Anda..." />
+          </p>
+
+          <label for="email" class="label1">Email</label>
+          <p>
+            <input
+              type="email"
+              name="email"
+              id="name"
+              placeholder="Masukkan Email Anda..."
+            />
+          </p>
+
+          <label for="jenis_kelamin" class="label1">Jenis Kelamin</label>
+        
+          <label class="label2">
+            <input type="radio" name="jenis_kelamin" value="pria" required />
+            Pria
+          </label>
+          <label class="label2">
+            <input type="radio" name="jenis_kelamin" value="wanita" required />
+            Wanita
+          </label>
+
+          <label for="kerjasama" class="label1">Bidang Kerjasama</label>
+          <label class="label2">
+            <input type="checkbox" name="kerjasama" value="coding" />
+            Front-End
+          </label>
+          <label class="label2">
+            <input type="checkbox" name="kerjasama" value="design" />
+            Graphic design
+          </label>
+          <label class="label2">
+            <input type="checkbox" name="kerjasama" value="ui/ux" />
+            UI/UX
+          </label>
+          <label class="label2">
+            <input type="checkbox" name="kerjasama" value="data_analyst" />
+            Data Analyst
+          </label>
+
+          <label for="file" class="label1">File Penawaran</label>
+          <input type="file" name="file" id="file" />
+
+          <label for="datetime" class="label1">Tanggal Pelaksanaan</label>
+          <input type="datetime-local" name="datetime" id="datetime" />
+
+          <label for="domisili" class="label1">Domisili</label>
+          <select name="domisili" id="domisili">
+            <option value="domisili" selected>--Pilih Domisili--</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Yogyakarta">Yogyakarta</option>
+            <option value="Solo">Solo</option>
+            <option value="Tulungagung">Tulungagung</option>
+            <option value="Other">--Lainnya--</option>
+          </select>
+
+          <div class="btn">
+            <button type="submit" class="button">Submit</button>
+            <button type="reset" class="button">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2025 <b>Rahma Apta</b></p>
+    </footer>
+</body>
+</html>
